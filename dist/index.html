@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      width: 600px;
+      display: flex;
+      justify-content: space-between;
+      background-color: pink;
+      margin: 100px auto;
+      flex-wrap: wrap;
+    }
+    .item {
+      flex: none;
+      height: 100px;
+      background-color: blue;
+      width: 100px;
+      margin: 20px;
+    }
+    .item:last-child.item:nth-child(4n + 2).item:nth-child(n+4) {
+      /* margin-right: auto; */
+      margin-right: calc(2*140px + 2*(100% - 4*140px)/3 + 20px);
+    }
+    .item:last-child.item:nth-child(4n + 3).item:nth-child(n+4) {
+      /* margin-right: auto; */
+      margin-right: calc(140px + (100% - 4*140px)/3 + 20px);
+    }
+    .item:nth-child(4n + 3){
+      background-color: red;
+    }
+    /* .item:nth-child(-n+4){
+      background-color: yellow;
+      margin-right: 20px!important;
+    } */
+    /* .item:nth-child(3){
+
+    } */
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <script src="function () {
+  document.write('Hello world!11111');
+}"></script>
+<script src="buddle%406ccc1f02772e077afd58.js"></script></body>
+</html>
